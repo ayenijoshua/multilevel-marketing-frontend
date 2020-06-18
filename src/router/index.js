@@ -1,10 +1,15 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Auth from "./auth";
 
 Vue.use(VueRouter);
 
 const routes = [
+  
+    ...Auth,
+  
+  
   {
     path: "/",
     name: "Home",
