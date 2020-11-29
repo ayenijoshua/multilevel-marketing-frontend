@@ -1,27 +1,13 @@
-import Login from "../components/auth//Login.vue";
-import Register from "../components/auth/Register.vue";
-import Verify from "../components/auth/Verify.vue";
-import Layout from "../components/layouts/AuthLayout.vue";
+import Login from "../views/auth//Login.vue";
+//import Register from "../views/auth/Register.vue";
+//import Verify from "../views/auth/Verify.vue";
+//import Layout from "../views/layouts/AuthLayout.vue";
 
 const routes = [
   {
-    path: "/auth",
-    component: Layout,
-    name: "auth-layout",
-    children: [
-      {
-        path: "login",
-        component: Login
-      },
-      {
-        path: "register",
-        component: Register
-      },
-      {
-        path: "verify",
-        component: Verify
-      }
-    ]
+    path: "/login",
+    component: Login,
+    name: "login"
   }
 ];
 
